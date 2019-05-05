@@ -1,4 +1,4 @@
-package de.rajic.springboot.training.demo;
+package de.rajic.springboot.training;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

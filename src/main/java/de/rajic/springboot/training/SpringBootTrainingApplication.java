@@ -1,4 +1,4 @@
-package de.rajic.springboot.training.demo;
+package de.rajic.springboot.training;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
