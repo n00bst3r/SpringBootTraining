@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 @Data
 @NoArgsConstructor
 @Entity
-public class Comment {
+public class Comment extends Auditable {
 
     @Id
     @GeneratedValue
