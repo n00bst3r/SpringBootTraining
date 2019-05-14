@@ -1,5 +1,6 @@
 package de.rajic.springboot.training;
 
+import com.ocpsoft.pretty.time.PrettyTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +11,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableJpaAuditing
@@ -35,6 +37,11 @@ public class SpringBootTrainingApplication {
             LOGGER.debug("4. Debug-Log");
             LOGGER.trace("5. Trace-Log");
         };
+    }
+
+    @Bean
+    PrettyTime prettyTime() {
+        return new PrettyTime();
     }
 
 }
