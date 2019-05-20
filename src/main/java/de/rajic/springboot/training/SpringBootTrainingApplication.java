@@ -14,7 +14,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-@EnableJpaAuditing
 public class SpringBootTrainingApplication {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(SpringBootTrainingApplication.class);
