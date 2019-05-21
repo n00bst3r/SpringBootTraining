@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.thymeleaf.extras.springsecurity5.dialect.SpringSecurityDialect;
 
 @SpringBootApplication
 public class SpringBootTrainingApplication {
@@ -41,6 +42,11 @@ public class SpringBootTrainingApplication {
     @Bean
     PrettyTime prettyTime() {
         return new PrettyTime();
+    }
+
+    @Bean
+    public SpringSecurityDialect securityDialect() {
+        return new SpringSecurityDialect();
     }
 
 }

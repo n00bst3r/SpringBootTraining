@@ -29,6 +29,8 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.4.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '2.1.4.RELEASE'
     compile group: 'com.ocpsoft', name: 'ocpsoft-pretty-time', version: '1.0.7'
+    compile group: 'org.thymeleaf.extras', name: 'thymeleaf-extras-springsecurity5', version: '3.0.4.RELEASE'
+
 
 
     compileOnly 'org.projectlombok:lombok'
